@@ -1,311 +1,83 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Royal Bikana Caterers Rajputana-themed multi-page marketing site (frontend)",
+  "title": "Replace Gallery placeholders with real uploaded event photos",
   "requirements": [
     {
-      "id": "REQ-1",
-      "summary": "Create SPA routing + responsive header navigation for Home, About Us, Services, Menu, Gallery, Contact with brand name/tagline.",
+      "id": "REQ-12",
+      "summary": "Replace Gallery placeholder images with the 12 uploaded photos as static assets while keeping the existing responsive grid and lightbox UX, and add user-friendly English alt/title text.",
       "acceptanceCriteria": [
-        "All 6 pages are reachable via in-app navigation without full page reload.",
-        "Navigation collapses into a mobile menu on small screens.",
-        "Business name and tagline are visible in the header (or within the hero on Home) on initial load."
+        "The Gallery page no longer displays any `/assets/generated/gallery-*.jpg` placeholder images.",
+        "All 12 uploaded files are present as static frontend assets and load correctly in production builds.",
+        "`galleryImages` renders exactly 12 tiles using the uploaded images: IMG-20260210-WA0029.jpg, IMG-20260210-WA0020.jpg, IMG-20260210-WA0015.jpg, IMG-20260210-WA0017.jpg, IMG-20260210-WA0027.jpg, IMG-20260210-WA0029-1.jpg, IMG-20260210-WA0022.jpg, IMG-20260210-WA0024.jpg, IMG-20260210-WA0020-1.jpg, IMG-20260210-WA0016.jpg, IMG-20260210-WA0015-1.jpg, IMG-20260210-WA0017-1.jpg.",
+        "Clicking any gallery tile still opens the lightbox modal with the larger preview of the same uploaded image.",
+        "All images have non-empty, user-friendly English `alt` text and `title` values (no placeholder text like 'image 1')."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/public/assets/gallery/IMG-20260210-WA0029.jpg",
           "operation": "create",
-          "description": "Create the root app with client-side routing for Home, About Us, Services, Menu, Gallery, Contact and a shared layout wrapper (header/footer)."
+          "description": "Add uploaded photo as a static asset for the Gallery page."
         },
         {
-          "path": "frontend/src/components/SiteHeader.tsx",
+          "path": "frontend/public/assets/gallery/IMG-20260210-WA0020.jpg",
           "operation": "create",
-          "description": "Implement responsive header with business name \"ROYAL BIKANA CATERERS\", tagline \"Shahi Swad • Royal Andaaz\", desktop nav, and mobile hamburger menu. Use shadcn-ui components (e.g., Button / Sheet) to support accessible mobile navigation. Verify the component's usage instructions before implementing."
+          "description": "Add uploaded photo as a static asset for the Gallery page."
         },
         {
-          "path": "frontend/src/components/SiteLayout.tsx",
+          "path": "frontend/public/assets/gallery/IMG-20260210-WA0015.jpg",
           "operation": "create",
-          "description": "Create shared layout component that renders the SiteHeader, main content container, and footer across all pages."
+          "description": "Add uploaded photo as a static asset for the Gallery page."
         },
         {
-          "path": "frontend/src/pages/HomePage.tsx",
+          "path": "frontend/public/assets/gallery/IMG-20260210-WA0017.jpg",
           "operation": "create",
-          "description": "Create Home page route component and wire into router."
+          "description": "Add uploaded photo as a static asset for the Gallery page."
         },
         {
-          "path": "frontend/src/pages/AboutPage.tsx",
+          "path": "frontend/public/assets/gallery/IMG-20260210-WA0027.jpg",
           "operation": "create",
-          "description": "Create About Us page route component and wire into router."
+          "description": "Add uploaded photo as a static asset for the Gallery page."
         },
         {
-          "path": "frontend/src/pages/ServicesPage.tsx",
+          "path": "frontend/public/assets/gallery/IMG-20260210-WA0029-1.jpg",
           "operation": "create",
-          "description": "Create Services page route component and wire into router."
+          "description": "Add uploaded photo as a static asset for the Gallery page."
         },
         {
-          "path": "frontend/src/pages/MenuPage.tsx",
+          "path": "frontend/public/assets/gallery/IMG-20260210-WA0022.jpg",
           "operation": "create",
-          "description": "Create Menu page route component and wire into router."
+          "description": "Add uploaded photo as a static asset for the Gallery page."
         },
         {
-          "path": "frontend/src/pages/GalleryPage.tsx",
+          "path": "frontend/public/assets/gallery/IMG-20260210-WA0024.jpg",
           "operation": "create",
-          "description": "Create Gallery page route component and wire into router."
+          "description": "Add uploaded photo as a static asset for the Gallery page."
         },
         {
-          "path": "frontend/src/pages/ContactPage.tsx",
+          "path": "frontend/public/assets/gallery/IMG-20260210-WA0020-1.jpg",
           "operation": "create",
-          "description": "Create Contact page route component and wire into router."
+          "description": "Add uploaded photo as a static asset for the Gallery page."
         },
         {
-          "path": "frontend/src/main.tsx",
-          "operation": "modify",
-          "description": "Ensure the app renders the new App router/layout and that global styling import points to the correct CSS file used for the Rajputana theme."
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Apply consistent premium Rajputana visual design (maroon/wine + gold, subtle patterns, crown/shield motifs), mobile-first and performant.",
-      "acceptanceCriteria": [
-        "All pages share a consistent color palette (maroon/wine + gold) and typography styling.",
-        "Royal motifs/patterns are present but subtle (do not reduce text readability).",
-        "All key sections are usable on mobile widths (320px+) with no horizontal scroll.",
-        "Page renders quickly with optimized assets (no uncompressed huge images)."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/index.css",
-          "operation": "modify",
-          "description": "Update global theme tokens and base styles for maroon/wine background, gold accents, readable typography, and subtle pattern support; ensure mobile-first spacing/typography and avoid heavy/blocking assets."
+          "path": "frontend/public/assets/gallery/IMG-20260210-WA0016.jpg",
+          "operation": "create",
+          "description": "Add uploaded photo as a static asset for the Gallery page."
         },
         {
-          "path": "frontend/tailwind.config.js",
-          "operation": "modify",
-          "description": "Extend Tailwind theme with brand colors (maroon/wine + gold) and any needed utilities to keep styling consistent across pages."
+          "path": "frontend/public/assets/gallery/IMG-20260210-WA0015-1.jpg",
+          "operation": "create",
+          "description": "Add uploaded photo as a static asset for the Gallery page."
         },
         {
-          "path": "frontend/public/assets/generated/pattern-tile-rajputana.dim_1024x1024.png",
+          "path": "frontend/public/assets/gallery/IMG-20260210-WA0017-1.jpg",
           "operation": "create",
-          "description": "Add generated seamless motif pattern tile as a static asset for subtle background texture usage across sections."
-        },
-        {
-          "path": "frontend/public/assets/generated/icon-crown-gold.dim_128x128.png",
-          "operation": "create",
-          "description": "Add generated gold crown icon as a static asset for subtle royal motif usage."
-        },
-        {
-          "path": "frontend/public/assets/generated/icon-shield-gold.dim_128x128.png",
-          "operation": "create",
-          "description": "Add generated gold shield icon as a static asset for subtle royal motif usage."
-        },
-        {
-          "path": "frontend/public/assets/generated/icon-handi-gold.dim_128x128.png",
-          "operation": "create",
-          "description": "Add generated gold handi/cooking pot icon as a static asset for subtle culinary motif usage."
-        },
-        {
-          "path": "frontend/public/assets/generated/royal-bikana-logo.dim_512x512.png",
-          "operation": "create",
-          "description": "Add generated Royal Bikana logo as a static asset and use it in header/hero as needed."
-        }
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "summary": "Implement Home page hero with required headings, CTAs to Contact/Menu, and a highlights section displayed as readable cards/tiles.",
-      "acceptanceCriteria": [
-        "Hero shows the exact heading and subheading text.",
-        "\"Book Catering\" routes to Contact page and \"Get Menu\" routes to Menu page.",
-        "Highlights are displayed as a clearly readable set of cards/tiles with icons or ornaments."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/public/assets/generated/hero-royal-texture.dim_1920x1080.jpg",
-          "operation": "create",
-          "description": "Add generated hero background texture as a static asset for the Home hero section."
-        },
-        {
-          "path": "frontend/src/pages/HomePage.tsx",
-          "operation": "modify",
-          "description": "Implement hero section using frontend/public/assets/generated/hero-royal-texture.dim_1920x1080.jpg, render exact required heading/subheading, and add CTA buttons that navigate to Contact and Menu. Use shadcn-ui components (e.g., Button / Card) for premium CTAs and highlight tiles. Verify the component's usage instructions before implementing."
-        }
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "summary": "Implement About Us page with provided About content verbatim in premium, readable formatting.",
-      "acceptanceCriteria": [
-        "About page displays the provided paragraph verbatim.",
-        "Content is styled for readability (line length, spacing) on mobile and desktop."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/AboutPage.tsx",
-          "operation": "modify",
-          "description": "Render the provided About paragraph verbatim and apply premium, readable typography/layout (semantic headings, comfortable line length, mobile-first spacing)."
-        }
-      ]
-    },
-    {
-      "id": "REQ-5",
-      "summary": "Implement Services page with the 8 requested services in an icon-based premium card/grid layout.",
-      "acceptanceCriteria": [
-        "All 8 services appear with an icon each.",
-        "Layout adapts to 1 column on small screens and multiple columns on larger screens."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/ServicesPage.tsx",
-          "operation": "modify",
-          "description": "Render all 8 services with an icon each and a responsive premium grid. Use shadcn-ui Card for consistent service tiles. Verify the component's usage instructions before implementing."
-        }
-      ]
-    },
-    {
-      "id": "REQ-6",
-      "summary": "Implement Menu page with categorized sections, exact item lists, and an in-page category navigation for deep linking/scrolling.",
-      "acceptanceCriteria": [
-        "All categories and items are present and spelled as provided.",
-        "Categories are clearly separated and easy to scan on mobile.",
-        "Menu page supports deep linking or scrolling to categories via a category list/tabs (in-page)."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/MenuPage.tsx",
-          "operation": "modify",
-          "description": "Implement categorized menu sections with all items spelled exactly as provided; add an in-page category navigation (anchor links or tabs) that supports deep linking/scrolling and is mobile-friendly. Use shadcn-ui components (e.g., Tabs / Button) if appropriate. Verify the component's usage instructions before implementing."
-        }
-      ]
-    },
-    {
-      "id": "REQ-7",
-      "summary": "Implement Gallery page with at least 8 themed placeholder images in a responsive grid and a modal/lightbox preview.",
-      "acceptanceCriteria": [
-        "Gallery page displays at least 8 placeholder images relevant to the listed themes.",
-        "Images are responsive and maintain aspect ratio.",
-        "Clicking a gallery image opens a larger preview (modal/lightbox) and can be closed easily on mobile."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/public/assets/generated/gallery-wedding-setup.dim_1200x800.jpg",
-          "operation": "create",
-          "description": "Add generated placeholder image for wedding catering setup."
-        },
-        {
-          "path": "frontend/public/assets/generated/gallery-live-counter.dim_1200x800.jpg",
-          "operation": "create",
-          "description": "Add generated placeholder image for live food counter."
-        },
-        {
-          "path": "frontend/public/assets/generated/gallery-royal-presentation.dim_1200x800.jpg",
-          "operation": "create",
-          "description": "Add generated placeholder image for royal food presentation."
-        },
-        {
-          "path": "frontend/public/assets/generated/gallery-atmosphere.dim_1200x800.jpg",
-          "operation": "create",
-          "description": "Add generated placeholder image for wedding/party atmosphere."
+          "description": "Add uploaded photo as a static asset for the Gallery page."
         },
         {
           "path": "frontend/src/pages/GalleryPage.tsx",
           "operation": "modify",
-          "description": "Create a responsive gallery grid using the generated placeholder images (reused to reach 8+ tiles as needed) with maintained aspect ratio; implement lightbox/modal preview using shadcn-ui Dialog. Verify the component's usage instructions before implementing."
-        }
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "summary": "Implement Contact page details, WhatsApp CTA with prefilled message, and a validated contact form that submits to backend and shows success/failure without reload.",
-      "acceptanceCriteria": [
-        "Contact page shows both phone numbers and the location text clearly.",
-        "WhatsApp button opens WhatsApp (wa.me deep link) targeting one of the provided numbers with a prefilled inquiry message including Name, Event Type, and Event Date when available.",
-        "Form validates required fields (at minimum: Name and Mobile Number) and indicates errors inline.",
-        "On submit, inquiry is sent to the backend and persisted; UI shows a success confirmation without page reload."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/ContactPage.tsx",
-          "operation": "modify",
-          "description": "Render contact details (two phone numbers, location, WhatsApp note), add a \"Book Now on WhatsApp\" button that builds a wa.me link with prefilled message from current form values, and implement the contact form with inline validation + success/failure UI states. Use shadcn-ui Input/Textarea/Button components for consistent premium form styling. Verify the component's usage instructions before implementing."
-        },
-        {
-          "path": "frontend/src/hooks/useSubmitContactInquiry.ts",
-          "operation": "create",
-          "description": "Create a React hook that calls the backend capability submitContactForm via the existing actor (useActor) and returns mutation state for success/failure handling (no page reload)."
-        },
-        {
-          "path": "frontend/src/hooks/useActor.ts",
-          "operation": "modify",
-          "description": "Ensure actor usage is compatible with anonymous visitors for marketing-site lead submission (no login requirement) and that errors are surfaced cleanly to the UI."
-        }
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "summary": "Add a premium footer across all pages with business info and social icons linking out to WhatsApp and Instagram placeholder.",
-      "acceptanceCriteria": [
-        "Footer appears on every page.",
-        "WhatsApp icon opens WhatsApp chat link.",
-        "If Instagram URL/handle is not provided, the link is clearly a placeholder and does not break navigation."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/SiteFooter.tsx",
-          "operation": "create",
-          "description": "Implement footer with business name, tagline, both phone numbers, location \"Bikaner, Rajasthan\", and social icons (Instagram + WhatsApp) linking out (WhatsApp to wa.me; Instagram placeholder). Use shadcn-ui Button for icon links if helpful. Verify the component's usage instructions before implementing."
-        },
-        {
-          "path": "frontend/src/components/SiteLayout.tsx",
-          "operation": "modify",
-          "description": "Wire SiteFooter into the shared layout so it appears on every page."
-        }
-      ]
-    },
-    {
-      "id": "REQ-11",
-      "summary": "Implement basic on-page SEO (titles, meta descriptions, semantic headings) and incorporate provided keywords naturally while keeping performance-friendly assets.",
-      "acceptanceCriteria": [
-        "Each page has a unique, relevant document title and meta description.",
-        "At least one page (Home and/or Services) includes the target keywords in visible copy in a natural way.",
-        "Pages use semantic structure (single H1 per page; appropriate H2/H3).",
-        "Lighthouse-style best practices are followed (compressed images, no blocking large assets)."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/hooks/useSeo.ts",
-          "operation": "create",
-          "description": "Create a small hook/utility to set document title and meta description per route (updating/creating the meta tag) without adding heavy dependencies."
-        },
-        {
-          "path": "frontend/src/pages/HomePage.tsx",
-          "operation": "modify",
-          "description": "Add semantic heading structure (single H1) and include at least some of the target keywords naturally in visible copy and/or meta description via useSeo."
-        },
-        {
-          "path": "frontend/src/pages/ServicesPage.tsx",
-          "operation": "modify",
-          "description": "Add semantic heading structure and include target keywords naturally in supporting copy and/or meta description via useSeo."
-        },
-        {
-          "path": "frontend/src/pages/AboutPage.tsx",
-          "operation": "modify",
-          "description": "Set unique page title/meta description via useSeo and ensure semantic heading structure."
-        },
-        {
-          "path": "frontend/src/pages/MenuPage.tsx",
-          "operation": "modify",
-          "description": "Set unique page title/meta description via useSeo and ensure semantic heading structure."
-        },
-        {
-          "path": "frontend/src/pages/GalleryPage.tsx",
-          "operation": "modify",
-          "description": "Set unique page title/meta description via useSeo and ensure semantic heading structure."
-        },
-        {
-          "path": "frontend/src/pages/ContactPage.tsx",
-          "operation": "modify",
-          "description": "Set unique page title/meta description via useSeo and ensure semantic heading structure; keep form UX performant (no unnecessary large client bundles)."
+          "description": "Update `galleryImages` to reference the 12 uploaded static assets under `frontend/public/assets/gallery/` (e.g., `/assets/gallery/IMG-20260210-WA0029.jpg`), remove any references to `/assets/generated/gallery-*.jpg`, and provide non-empty, user-friendly English `alt` and `title` values for each image while preserving the existing grid and lightbox (Dialog) behavior. Also remove any now-unused imports if applicable."
         }
       ]
     }

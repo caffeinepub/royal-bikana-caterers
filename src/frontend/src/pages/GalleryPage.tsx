@@ -11,44 +11,64 @@ export default function GalleryPage() {
 
   const galleryImages = [
     {
-      src: '/assets/generated/gallery-wedding-setup.dim_1200x800.jpg',
-      alt: 'Wedding Catering Setup',
-      title: 'Wedding Catering Setup',
+      src: '/assets/gallery/IMG-20260210-WA0029.jpg',
+      alt: 'Traditional Rajasthani welcome thali with decorative rangoli pattern',
+      title: 'Traditional Welcome Thali',
     },
     {
-      src: '/assets/generated/gallery-live-counter.dim_1200x800.jpg',
-      alt: 'Live Food Counter',
-      title: 'Live Food Counter',
+      src: '/assets/gallery/IMG-20260210-WA0020.jpg',
+      alt: 'Illuminated royal buffet counter with ornate geometric patterns and colorful drapes',
+      title: 'Royal Buffet Counter Setup',
     },
     {
-      src: '/assets/generated/gallery-royal-presentation.dim_1200x800.jpg',
-      alt: 'Royal Food Presentation',
-      title: 'Royal Food Presentation',
+      src: '/assets/gallery/IMG-20260210-WA0015.jpg',
+      alt: 'Outdoor evening catering setup with illuminated royal buffet stations on lawn',
+      title: 'Outdoor Evening Event Setup',
     },
     {
-      src: '/assets/generated/gallery-atmosphere.dim_1200x800.jpg',
-      alt: 'Wedding & Party Atmosphere',
-      title: 'Wedding & Party Atmosphere',
+      src: '/assets/gallery/IMG-20260210-WA0017.jpg',
+      alt: 'Elegant illuminated buffet counter with traditional Rajasthani arch designs',
+      title: 'Elegant Buffet Station',
     },
     {
-      src: '/assets/generated/gallery-wedding-setup.dim_1200x800.jpg',
-      alt: 'Premium Event Setup',
-      title: 'Premium Event Setup',
+      src: '/assets/gallery/IMG-20260210-WA0027.jpg',
+      alt: 'Premium catering counter with purple drapes and decorative elements',
+      title: 'Premium Catering Counter',
     },
     {
-      src: '/assets/generated/gallery-live-counter.dim_1200x800.jpg',
-      alt: 'Interactive Cooking Station',
-      title: 'Interactive Cooking Station',
+      src: '/assets/gallery/IMG-20260210-WA0029-1.jpg',
+      alt: 'Decorative welcome thali with traditional rangoli design and rose petals',
+      title: 'Decorative Welcome Arrangement',
     },
     {
-      src: '/assets/generated/gallery-royal-presentation.dim_1200x800.jpg',
-      alt: 'Traditional Marwari Cuisine',
-      title: 'Traditional Marwari Cuisine',
+      src: '/assets/gallery/IMG-20260210-WA0022.jpg',
+      alt: 'Live food counter with traditional decorations and cultural statues',
+      title: 'Live Food Counter Station',
     },
     {
-      src: '/assets/generated/gallery-atmosphere.dim_1200x800.jpg',
-      alt: 'Celebration Moments',
-      title: 'Celebration Moments',
+      src: '/assets/gallery/IMG-20260210-WA0024.jpg',
+      alt: 'Royal buffet setup with traditional Rajasthani motifs and colorful backdrop',
+      title: 'Royal Buffet Display',
+    },
+    {
+      src: '/assets/gallery/IMG-20260210-WA0020-1.jpg',
+      alt: 'Illuminated catering counter with vibrant striped drapes and royal patterns',
+      title: 'Vibrant Catering Setup',
+    },
+    {
+      src: '/assets/gallery/IMG-20260210-WA0016.jpg',
+      alt: 'Showroom display of premium catering equipment with royal architectural designs',
+      title: 'Premium Catering Equipment',
+    },
+    {
+      src: '/assets/gallery/IMG-20260210-WA0015-1.jpg',
+      alt: 'Outdoor lawn catering setup with illuminated royal buffet counters at dusk',
+      title: 'Outdoor Lawn Event',
+    },
+    {
+      src: '/assets/gallery/IMG-20260210-WA0017-1.jpg',
+      alt: 'Evening outdoor catering with illuminated traditional buffet stations',
+      title: 'Evening Outdoor Catering',
     },
   ];
 

@@ -1,14 +1,14 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 3,
+  "projectStateVersion": 5,
   "summary": "Premium royal-themed multi-page website for ROYAL BIKANA CATERERS (Indian wedding catering company in Bikaner, Rajasthan) with Rajputana design (maroon/wine + gold), logo concept, menu, gallery, contact/WhatsApp booking, and SEO-focused fast mobile-friendly build.",
   "architectural_notes": [
     "Site language: simple, professional Indian English",
-    "Use placeholder images for gallery if real images are not available"
+    "Use placeholder images for gallery if real images are not available",
+    "When real event images are provided by the client, use them in the Gallery page in place of placeholder images."
   ],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Royal logo with crown, shield, and cooking pot (handi), gold on transparent background (royal-bikana-logo.dim_512x512.png)\n- Royal maroon/wine textured hero background with subtle Indian pattern accents (hero-royal-texture.dim_1920x1080.jpg)\n- Subtle seamless Indian motif pattern tile in maroon and gold (pattern-tile-rajputana.dim_1024x1024.png)\n- Wedding catering setup placeholder photo (gallery-wedding-setup.dim_1200x800.jpg)\n- Live food counter placeholder photo (gallery-live-counter.dim_1200x800.jpg)\n- Royal food presentation placeholder photo (gallery-royal-presentation.dim_1200x800.jpg)\n- Wedding/party atmosphere placeholder photo (gallery-atmosphere.dim_1200x800.jpg)\n- Gold crown icon (icon-crown-gold.dim_128x128.png)\n- Gold shield icon (icon-shield-gold.dim_128x128.png)\n- Gold handi/cooking pot icon (icon-handi-gold.dim_128x128.png)",
   "existing_features": [
     {
       "id": "feature-implement-a-multi-page-marketing-website-for-the-catering-business-with-the-following-pages-and-navigation-home-about-us-services-menu-gallery-contact-include-a-responsive-header-with-the-business-name-royal-bikana-caterers-tagline-shahi-swad-royal-andaaz-and-clear-navigation-links-that-work-on-mobile-hamburger-menu-and-desktop",
@@ -89,6 +89,14 @@
         "REQ-11"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-the-existing-gallery-page-to-use-the-12-user-uploaded-images-instead-of-the-current-placeholder-images-while-keeping-the-existing-responsive-grid-and-lightbox-behavior-add-the-uploaded-image-files-as-static-frontend-assets-and-update-frontend-src-pages-gallerypage-tsx-so-galleryimages-references-those-assets-with-appropriate-english-alt-text-titles",
+      "title": "Update the existing Gallery page to use the 12 user-uploaded images instead of the current placeholder images, while keeping the existing responsive grid and lightbox behavior. Add the uploaded image files as static frontend assets and update `frontend/src/pages/GalleryPage.tsx` so `galleryImages` references those assets with appropriate English alt text/titles.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -146,6 +154,12 @@
       "reqIds": [
         "REQ-9"
       ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "Add the user-uploaded real event images to the existing Gallery page, replacing the current placeholder photos",
+      "reqIds": [],
       "status": "pending"
     }
   ],

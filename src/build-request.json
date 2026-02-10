@@ -1,233 +1,42 @@
 {
   "kind": "build_request",
-  "title": "Royal Bikana Caterers premium Rajputana-themed multi-page catering website (Bikaner)",
+  "title": "Replace Gallery placeholders with uploaded real event photos",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-1",
-      "text": "Implement a multi-page marketing website for the catering business with the following pages and navigation: Home, About Us, Services, Menu, Gallery, Contact. Include a responsive header with the business name \"ROYAL BIKANA CATERERS\", tagline \"Shahi Swad • Royal Andaaz\", and clear navigation links that work on mobile (hamburger menu) and desktop.",
+      "id": "REQ-12",
+      "text": "Update the existing Gallery page to use the 12 user-uploaded images instead of the current placeholder images, while keeping the existing responsive grid and lightbox behavior. Add the uploaded image files as static frontend assets and update `frontend/src/pages/GalleryPage.tsx` so `galleryImages` references those assets with appropriate English alt text/titles.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-2"
+          "msg-7",
+          "msg-8"
         ],
         "quotes": [
-          "Website Pages & Content:\n\n1) HOME PAGE ...\n\n2) ABOUT US PAGE ...\n\n3) SERVICES PAGE ...\n\n4) MENU PAGE ...\n\n5) GALLERY PAGE ...\n\n6) CONTACT PAGE ..."
+          "Exiting gallary page",
+          "Do you want these uploaded images added to your existing Gallery page, replacing the placeholder photos?"
         ]
       },
       "acceptanceCriteria": [
-        "All 6 pages are reachable via in-app navigation without full page reload.",
-        "Navigation collapses into a mobile menu on small screens.",
-        "Business name and tagline are visible in the header (or within the hero on Home) on initial load."
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "text": "Apply the requested premium Royal Rajputana visual design consistently across all pages: maroon/wine red base, gold accents, subtle traditional Indian pattern textures, and royal elements (crown/shield motifs). The layout must remain clean and modern while retaining a traditional Indian touch, and must be mobile-first and performant.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-2"
-        ],
-        "quotes": [
-          "Theme & Design:\n- Royal Rajputana style\n- Colors: Maroon / Wine Red background with Golden accents\n- Elegant traditional Indian design\n- Premium, wedding-focused look\n- Use royal elements like crown, shield, subtle Indian patterns\n- Clean, modern layout but with traditional Indian touch\n- Mobile-friendly and fast loading"
-        ]
-      },
-      "acceptanceCriteria": [
-        "All pages share a consistent color palette (maroon/wine + gold) and typography styling.",
-        "Royal motifs/patterns are present but subtle (do not reduce text readability).",
-        "All key sections are usable on mobile widths (320px+) with no horizontal scroll.",
-        "Page renders quickly with optimized assets (no uncompressed huge images)."
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "text": "Build the Home page with: (a) hero section using a royal background, (b) heading \"Royal Wedding & Event Catering in Bikaner\", (c) subheading \"Authentic Marwari & Shahi Cuisine for Weddings, Parties & Events\", and (d) two CTA buttons labeled \"Book Catering\" and \"Get Menu\" that navigate users to Contact and Menu pages respectively. Add a highlight section listing: Live Catering Available, Pure & Hygienic Food, Royal Marwari Special, Wedding • Party • Events • Corporate Catering.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-2"
-        ],
-        "quotes": [
-          "1) HOME PAGE\n- Hero section with royal background\n- Heading: \"Royal Wedding & Event Catering in Bikaner\"\n- Subheading: \"Authentic Marwari & Shahi Cuisine for Weddings, Parties & Events\"\n- Call-to-action buttons:\n  \"Book Catering\"\n  \"Get Menu\"\n\nHighlight sections:\n- Live Catering Available\n- Pure & Hygienic Food\n- Royal Marwari Special\n- Wedding • Party • Events • Corporate Catering"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Hero shows the exact heading and subheading text.",
-        "\"Book Catering\" routes to Contact page and \"Get Menu\" routes to Menu page.",
-        "Highlights are displayed as a clearly readable set of cards/tiles with icons or ornaments."
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "text": "Build the About Us page and render the provided About content exactly (verbatim) in professional English formatting suitable for a premium wedding-catering brand.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-2"
-        ],
-        "quotes": [
-          "2) ABOUT US PAGE\nContent:\n\"Royal Bikana Caterers is a trusted name in wedding and event catering in Bikaner, Rajasthan. We specialize in authentic Marwari and royal Indian cuisine, prepared with purity, hygiene, and traditional taste. Our mission is to deliver shahi swad with royal andaaz for every occasion. With experienced chefs, live cooking counters, and premium presentation, we turn every event into a memorable celebration.\""
-        ]
-      },
-      "acceptanceCriteria": [
-        "About page displays the provided paragraph verbatim.",
-        "Content is styled for readability (line length, spacing) on mobile and desktop."
-      ]
-    },
-    {
-      "id": "REQ-5",
-      "text": "Build the Services page displaying the requested service list with icons and a premium card/grid layout: Wedding Catering, Engagement & Reception Catering, Birthday Party Catering, Anniversary & Family Functions, Corporate Catering, Live Food Counters, Royal Marwari Thali, Customized Menu Planning.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-2"
-        ],
-        "quotes": [
-          "3) SERVICES PAGE\nList services with icons:\n- Wedding Catering\n- Engagement & Reception Catering\n- Birthday Party Catering\n- Anniversary & Family Functions\n- Corporate Catering\n- Live Food Counters\n- Royal Marwari Thali\n- Customized Menu Planning"
-        ]
-      },
-      "acceptanceCriteria": [
-        "All 8 services appear with an icon each.",
-        "Layout adapts to 1 column on small screens and multiple columns on larger screens."
-      ]
-    },
-    {
-      "id": "REQ-6",
-      "text": "Build the Menu page with visually distinct categorized sections and include all requested items under each category exactly as provided: Royal Marwari Special (Live), Veg Main Course, Rice & Bread, Starters & Chaat, Sweets, Beverages.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-2"
-        ],
-        "quotes": [
-          "4) MENU PAGE\nCreate a beautiful categorized menu:\n\nRoyal Marwari Special (Live):\n- Dal Baati Churma\n- Desi Ghee Churma\n- Gatte ki Sabzi\n- Ker Sangri\n- Bajra Roti / Tandoor Roti\n- Lehsun Chutney\n- Chhachh / Jaljeera\n\nVeg Main Course:\n- Shahi Paneer\n- Paneer Butter Masala\n- Mix Veg\n- Malai Kofta\n- Dum Aloo\n- Sev Tamatar\n\nRice & Bread:\n- Plain Rice\n- Jeera Rice\n- Veg Pulao\n- Tandoor Roti\n- Butter Naan\n- Missi Roti\n\nStarters & Chaat:\n- Paneer Tikka (Live)\n- Veg Cutlet\n- Dahi Bhalla\n- Pani Puri (Live)\n- Papdi Chaat\n\nSweets:\n- Moong Dal Halwa\n- Gulab Jamun\n- Rasgulla\n- Kesar Shrikhand\n\nBeverages:\n- Mineral Water\n- Soft Drinks\n- Masala Chhachh\n- Welcome Drink"
-        ]
-      },
-      "acceptanceCriteria": [
-        "All categories and items are present and spelled as provided.",
-        "Categories are clearly separated and easy to scan on mobile.",
-        "Menu page supports deep linking or scrolling to categories via a category list/tabs (in-page)."
-      ]
-    },
-    {
-      "id": "REQ-7",
-      "text": "Build the Gallery page showcasing: wedding catering setup, live food counters, royal food presentation, and wedding/party atmosphere using high-quality placeholder images when real images are not available. Use a responsive grid with a lightbox/modal view for larger preview.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-2"
-        ],
-        "quotes": [
-          "5) GALLERY PAGE\n- Showcase wedding catering setup\n- Live food counters\n- Royal food presentation\n- Wedding & party atmosphere\n(Use placeholder images if real images not available)"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Gallery page displays at least 8 placeholder images relevant to the listed themes.",
-        "Images are responsive and maintain aspect ratio.",
-        "Clicking a gallery image opens a larger preview (modal/lightbox) and can be closed easily on mobile."
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "text": "Build the Contact page displaying the provided phone contacts and location, include a WhatsApp availability note, add a \"Book Now on WhatsApp\" button, and implement a simple contact form with fields: Name, Mobile Number, Event Type, Event Date, Message. Form submission must show a clear success/failure state.",
-      "target": "both",
-      "source": {
-        "messageIds": [
-          "msg-2"
-        ],
-        "quotes": [
-          "6) CONTACT PAGE\nDisplay clearly:\n- Phone:\n  Sarwan Singh – 9983685264\n  Prakash Sain – 6376424249\n- Location: Bikaner, Rajasthan\n- WhatsApp Available\n- Simple contact form:\n  Name\n  Mobile Number\n  Event Type\n  Event Date\n  Message\n\nAdd \"Book Now on WhatsApp\" button."
-        ]
-      },
-      "acceptanceCriteria": [
-        "Contact page shows both phone numbers and the location text clearly.",
-        "WhatsApp button opens WhatsApp (wa.me deep link) targeting one of the provided numbers with a prefilled inquiry message including Name, Event Type, and Event Date when available.",
-        "Form validates required fields (at minimum: Name and Mobile Number) and indicates errors inline.",
-        "On submit, inquiry is sent to the backend and persisted; UI shows a success confirmation without page reload."
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "text": "Implement backend support for saving contact inquiries (leads) submitted from the Contact form, including fields: name, mobileNumber, eventType, eventDate (optional), message, createdAt timestamp. Provide a backend query method to list inquiries for later use/debugging (no public admin UI required unless added later).",
-      "target": "backend",
-      "source": {
-        "messageIds": [
-          "msg-2"
-        ],
-        "quotes": [
-          "Simple contact form:\n  Name\n  Mobile Number\n  Event Type\n  Event Date\n  Message"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Backend exposes an update method to create an inquiry and stores it in stable memory across upgrades.",
-        "Backend exposes a query method to list saved inquiries.",
-        "Inquiry creation returns an identifier or confirmation that the frontend can display as success."
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "text": "Add a premium footer across all pages that includes: business name, tagline, both phone numbers, location \"Bikaner, Rajasthan\", and social icons for Instagram and WhatsApp. Social icons must link out (WhatsApp to wa.me; Instagram can be a placeholder link if no handle is provided).",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-2"
-        ],
-        "quotes": [
-          "Footer Section:\n- Business name\n- Short tagline\n- Phone numbers\n- Location\n- Social media icons (Instagram, WhatsApp)"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Footer appears on every page.",
-        "WhatsApp icon opens WhatsApp chat link.",
-        "If Instagram URL/handle is not provided, the link is clearly a placeholder and does not break navigation."
-      ]
-    },
-    {
-      "id": "REQ-11",
-      "text": "Implement SEO-friendly structure and basic on-page SEO for all pages: meaningful page titles, meta descriptions, semantic headings, and performance-friendly assets. Include the provided keywords naturally in relevant page copy and/or meta descriptions without keyword stuffing: \"Best Caterers in Bikaner\", \"Wedding Caterers in Bikaner\", \"Marwari Catering Service\", \"Royal Catering Bikaner\".",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-2"
-        ],
-        "quotes": [
-          "SEO Requirements:\n- SEO-friendly structure\n- Keywords:\n  \"Best Caterers in Bikaner\"\n  \"Wedding Caterers in Bikaner\"\n  \"Marwari Catering Service\"\n  \"Royal Catering Bikaner\"\n- Fast loading\n- Optimized for mobile and desktop"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Each page has a unique, relevant document title and meta description.",
-        "At least one page (Home and/or Services) includes the target keywords in visible copy in a natural way.",
-        "Pages use semantic structure (single H1 per page; appropriate H2/H3).",
-        "Lighthouse-style best practices are followed (compressed images, no blocking large assets)."
+        "The Gallery page no longer displays any `/assets/generated/gallery-*.jpg` placeholder images.",
+        "All 12 uploaded files are present as static frontend assets and load correctly in production builds.",
+        "`galleryImages` renders exactly 12 tiles using the uploaded images: IMG-20260210-WA0029.jpg, IMG-20260210-WA0020.jpg, IMG-20260210-WA0015.jpg, IMG-20260210-WA0017.jpg, IMG-20260210-WA0027.jpg, IMG-20260210-WA0029-1.jpg, IMG-20260210-WA0022.jpg, IMG-20260210-WA0024.jpg, IMG-20260210-WA0020-1.jpg, IMG-20260210-WA0016.jpg, IMG-20260210-WA0015-1.jpg, IMG-20260210-WA0017-1.jpg.",
+        "Clicking any gallery tile still opens the lightbox modal with the larger preview of the same uploaded image.",
+        "All images have non-empty, user-friendly English `alt` text and `title` values (no placeholder text like 'image 1')."
       ]
     }
   ],
   "constraints": [
-    "User-facing text must be in English (simple, professional Indian English).",
-    "Do not modify files under frontend/src/components/ui or any other immutable paths listed in SYSTEM_CONTEXT; compose existing UI components instead of editing them.",
-    "Backend must remain a single Motoko actor (no additional backend services, no external databases).",
-    "No third-party email/SMS/push notification integrations; contact capture must be handled within the app and/or via WhatsApp links."
+    "Do not modify files under frontend/src/components/ui (read-only).",
+    "Do not modify any paths listed in frontend.immutablePaths.",
+    "Keep the existing Gallery route (`/gallery`) and maintain current grid + lightbox UX."
   ],
   "nonGoals": [
-    "Online payments, booking deposits, or invoicing.",
-    "Real-time chat or WebSocket-based features.",
-    "Third-party authentication providers (only Internet Identity if authentication is ever needed later).",
-    "CMS/admin dashboard for managing gallery/menu content (static content is sufficient for this build)."
+    "Building an admin UI for managing gallery images.",
+    "Adding image upload functionality to the website at runtime."
   ],
   "imageRequirements": {
-    "required": [
-      "Royal logo with crown, shield, and cooking pot (handi), gold on transparent background (royal-bikana-logo.dim_512x512.png)",
-      "Royal maroon/wine textured hero background with subtle Indian pattern accents (hero-royal-texture.dim_1920x1080.jpg)",
-      "Subtle seamless Indian motif pattern tile in maroon and gold (pattern-tile-rajputana.dim_1024x1024.png)",
-      "Wedding catering setup placeholder photo (gallery-wedding-setup.dim_1200x800.jpg)",
-      "Live food counter placeholder photo (gallery-live-counter.dim_1200x800.jpg)",
-      "Royal food presentation placeholder photo (gallery-royal-presentation.dim_1200x800.jpg)",
-      "Wedding/party atmosphere placeholder photo (gallery-atmosphere.dim_1200x800.jpg)",
-      "Gold crown icon (icon-crown-gold.dim_128x128.png)",
-      "Gold shield icon (icon-shield-gold.dim_128x128.png)",
-      "Gold handi/cooking pot icon (icon-handi-gold.dim_128x128.png)"
-    ],
+    "required": [],
     "edits": []
   },
   "userProfileUpdate": {

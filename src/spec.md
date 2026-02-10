@@ -1,19 +1,12 @@
 # Specification
 
 ## Summary
-**Goal:** Build a premium Rajputana-themed, multi-page marketing website for Royal Bikana Caterers with core business content, gallery, and contact lead capture.
+**Goal:** Replace the Gallery page’s placeholder images with the 12 uploaded real event photos while keeping the current responsive grid and lightbox experience.
 
 **Planned changes:**
-- Create 6 client-routed pages with responsive header navigation (desktop + hamburger menu): Home, About Us, Services, Menu, Gallery, Contact.
-- Apply consistent royal visual design (maroon/wine base, gold accents, subtle Indian patterns, crown/shield motifs) with mobile-first responsive layouts.
-- Home page: hero with specified heading/subheading, CTAs to Contact/Menu, and highlights section.
-- About page: render the provided About paragraph verbatim with premium readable formatting.
-- Services page: show the 8 requested services in an icon + card/grid layout responsive to screen size.
-- Menu page: show all provided categories/items exactly, with clear section separation and in-page category navigation (tabs/list/anchors).
-- Gallery page: responsive grid with at least 8 relevant placeholder images and a lightbox/modal preview.
-- Contact page: show provided phone numbers/location/WhatsApp note, add “Book Now on WhatsApp” button (wa.me deep link), and a contact form with validation and success/failure states.
-- Backend: store contact inquiries (name, mobileNumber, eventType, eventDate optional, message, createdAt) and expose methods to create and list inquiries.
-- Add a premium footer across all pages with business info and Instagram/WhatsApp icons/links.
-- Add basic on-page SEO per page (titles, meta descriptions, semantic headings) and include provided keywords naturally.
+- Add the 12 uploaded image files as static frontend assets.
+- Update `frontend/src/pages/GalleryPage.tsx` so `galleryImages` references the uploaded assets (not `/assets/generated/gallery-*.jpg`) and renders exactly 12 tiles.
+- Provide user-friendly English `alt` text and `title` values for each gallery image.
+- Ensure clicking any tile still opens the lightbox modal showing the corresponding uploaded image.
 
-**User-visible outcome:** Visitors can browse a fast, mobile-friendly royal-themed catering website, view services/menu/gallery, and submit inquiries via a form (saved in the backend) or contact instantly via WhatsApp.
+**User-visible outcome:** Visitors see a Gallery of 12 real event photos (instead of placeholders) and can open each photo in the existing lightbox preview.
