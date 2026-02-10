@@ -1,0 +1,214 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-implement-a-multi-page-marketing-website-for-the-catering-business-with-the-following-pages-and-navigation-home-about-us-services-menu-gallery-contact-include-a-responsive-header-with-the-business-name-royal-bikana-caterers-tagline-shahi-swad-royal-andaaz-and-clear-navigation-links-that-work-on-mobile-hamburger-menu-and-desktop",
+      "featureTitle": "Implement a multi-page marketing website for the catering business with the following pages and navigation: Home, About Us, Services, Menu, Gallery, Contact. Include a responsive header with the business name \"ROYAL BIKANA CATERERS\", tagline \"Shahi Swad • Royal Andaaz\", and clear navigation links that work on mobile (hamburger menu) and desktop.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/SiteHeader.tsx",
+        "frontend/src/components/SiteLayout.tsx",
+        "frontend/src/main.tsx",
+        "frontend/src/pages/AboutPage.tsx",
+        "frontend/src/pages/ContactPage.tsx",
+        "frontend/src/pages/GalleryPage.tsx",
+        "frontend/src/pages/HomePage.tsx",
+        "frontend/src/pages/MenuPage.tsx",
+        "frontend/src/pages/ServicesPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-the-requested-premium-royal-rajputana-visual-design-consistently-across-all-pages-maroon-wine-red-base-gold-accents-subtle-traditional-indian-pattern-textures-and-royal-elements-crown-shield-motifs-the-layout-must-remain-clean-and-modern-while-retaining-a-traditional-indian-touch-and-must-be-mobile-first-and-performant",
+      "featureTitle": "Apply the requested premium Royal Rajputana visual design consistently across all pages: maroon/wine red base, gold accents, subtle traditional Indian pattern textures, and royal elements (crown/shield motifs). The layout must remain clean and modern while retaining a traditional Indian touch, and must be mobile-first and performant.",
+      "files": [
+        "frontend/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-the-home-page-with-a-hero-section-using-a-royal-background-b-heading-royal-wedding-event-catering-in-bikaner-c-subheading-authentic-marwari-shahi-cuisine-for-weddings-parties-events-and-d-two-cta-buttons-labeled-book-catering-and-get-menu-that-navigate-users-to-contact-and-menu-pages-respectively-add-a-highlight-section-listing-live-catering-available-pure-hygienic-food-royal-marwari-special-wedding-party-events-corporate-catering",
+      "featureTitle": "Build the Home page with: (a) hero section using a royal background, (b) heading \"Royal Wedding & Event Catering in Bikaner\", (c) subheading \"Authentic Marwari & Shahi Cuisine for Weddings, Parties & Events\", and (d) two CTA buttons labeled \"Book Catering\" and \"Get Menu\" that navigate users to Contact and Menu pages respectively. Add a highlight section listing: Live Catering Available, Pure & Hygienic Food, Royal Marwari Special, Wedding • Party • Events • Corporate Catering.",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-the-about-us-page-and-render-the-provided-about-content-exactly-verbatim-in-professional-english-formatting-suitable-for-a-premium-wedding-catering-brand",
+      "featureTitle": "Build the About Us page and render the provided About content exactly (verbatim) in professional English formatting suitable for a premium wedding-catering brand.",
+      "files": [
+        "frontend/src/pages/AboutPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-the-services-page-displaying-the-requested-service-list-with-icons-and-a-premium-card-grid-layout-wedding-catering-engagement-reception-catering-birthday-party-catering-anniversary-family-functions-corporate-catering-live-food-counters-royal-marwari-thali-customized-menu-planning",
+      "featureTitle": "Build the Services page displaying the requested service list with icons and a premium card/grid layout: Wedding Catering, Engagement & Reception Catering, Birthday Party Catering, Anniversary & Family Functions, Corporate Catering, Live Food Counters, Royal Marwari Thali, Customized Menu Planning.",
+      "files": [
+        "frontend/src/pages/ServicesPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-the-menu-page-with-visually-distinct-categorized-sections-and-include-all-requested-items-under-each-category-exactly-as-provided-royal-marwari-special-live-veg-main-course-rice-bread-starters-chaat-sweets-beverages",
+      "featureTitle": "Build the Menu page with visually distinct categorized sections and include all requested items under each category exactly as provided: Royal Marwari Special (Live), Veg Main Course, Rice & Bread, Starters & Chaat, Sweets, Beverages.",
+      "files": [
+        "frontend/src/pages/MenuPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-the-gallery-page-showcasing-wedding-catering-setup-live-food-counters-royal-food-presentation-and-wedding-party-atmosphere-using-high-quality-placeholder-images-when-real-images-are-not-available-use-a-responsive-grid-with-a-lightbox-modal-view-for-larger-preview",
+      "featureTitle": "Build the Gallery page showcasing: wedding catering setup, live food counters, royal food presentation, and wedding/party atmosphere using high-quality placeholder images when real images are not available. Use a responsive grid with a lightbox/modal view for larger preview.",
+      "files": [
+        "frontend/src/pages/GalleryPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-the-contact-page-displaying-the-provided-phone-contacts-and-location-include-a-whatsapp-availability-note-add-a-book-now-on-whatsapp-button-and-implement-a-simple-contact-form-with-fields-name-mobile-number-event-type-event-date-message-form-submission-must-show-a-clear-success-failure-state",
+      "featureTitle": "Build the Contact page displaying the provided phone contacts and location, include a WhatsApp availability note, add a \"Book Now on WhatsApp\" button, and implement a simple contact form with fields: Name, Mobile Number, Event Type, Event Date, Message. Form submission must show a clear success/failure state.",
+      "files": [
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/hooks/useSubmitContactInquiry.ts",
+        "frontend/src/pages/ContactPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-premium-footer-across-all-pages-that-includes-business-name-tagline-both-phone-numbers-location-bikaner-rajasthan-and-social-icons-for-instagram-and-whatsapp-social-icons-must-link-out-whatsapp-to-wa-me-instagram-can-be-a-placeholder-link-if-no-handle-is-provided",
+      "featureTitle": "Add a premium footer across all pages that includes: business name, tagline, both phone numbers, location \"Bikaner, Rajasthan\", and social icons for Instagram and WhatsApp. Social icons must link out (WhatsApp to wa.me; Instagram can be a placeholder link if no handle is provided).",
+      "files": [
+        "frontend/src/components/SiteFooter.tsx",
+        "frontend/src/components/SiteLayout.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-seo-friendly-structure-and-basic-on-page-seo-for-all-pages-meaningful-page-titles-meta-descriptions-semantic-headings-and-performance-friendly-assets-include-the-provided-keywords-naturally-in-relevant-page-copy-and-or-meta-descriptions-without-keyword-stuffing-best-caterers-in-bikaner-wedding-caterers-in-bikaner-marwari-catering-service-royal-catering-bikaner",
+      "featureTitle": "Implement SEO-friendly structure and basic on-page SEO for all pages: meaningful page titles, meta descriptions, semantic headings, and performance-friendly assets. Include the provided keywords naturally in relevant page copy and/or meta descriptions without keyword stuffing: \"Best Caterers in Bikaner\", \"Wedding Caterers in Bikaner\", \"Marwari Catering Service\", \"Royal Catering Bikaner\".",
+      "files": [
+        "frontend/src/hooks/useSeo.ts",
+        "frontend/src/pages/AboutPage.tsx",
+        "frontend/src/pages/ContactPage.tsx",
+        "frontend/src/pages/GalleryPage.tsx",
+        "frontend/src/pages/HomePage.tsx",
+        "frontend/src/pages/MenuPage.tsx",
+        "frontend/src/pages/ServicesPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

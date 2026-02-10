@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Premium royal-themed multi-page website for ROYAL BIKANA CATERERS (Indian wedding catering company in Bikaner, Rajasthan) with Rajputana design (maroon/wine + gold), logo concept, menu, gallery, contact/WhatsApp booking, and SEO-focused fast mobile-friendly build.",
+  "architectural_notes": [
+    "Site language: simple, professional Indian English",
+    "Use placeholder images for gallery if real images are not available"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Royal logo with crown, shield, and cooking pot (handi), gold on transparent background (royal-bikana-logo.dim_512x512.png)\n- Royal maroon/wine textured hero background with subtle Indian pattern accents (hero-royal-texture.dim_1920x1080.jpg)\n- Subtle seamless Indian motif pattern tile in maroon and gold (pattern-tile-rajputana.dim_1024x1024.png)\n- Wedding catering setup placeholder photo (gallery-wedding-setup.dim_1200x800.jpg)\n- Live food counter placeholder photo (gallery-live-counter.dim_1200x800.jpg)\n- Royal food presentation placeholder photo (gallery-royal-presentation.dim_1200x800.jpg)\n- Wedding/party atmosphere placeholder photo (gallery-atmosphere.dim_1200x800.jpg)\n- Gold crown icon (icon-crown-gold.dim_128x128.png)\n- Gold shield icon (icon-shield-gold.dim_128x128.png)\n- Gold handi/cooking pot icon (icon-handi-gold.dim_128x128.png)",
+  "existing_features": [
+    {
+      "id": "feature-implement-a-multi-page-marketing-website-for-the-catering-business-with-the-following-pages-and-navigation-home-about-us-services-menu-gallery-contact-include-a-responsive-header-with-the-business-name-royal-bikana-caterers-tagline-shahi-swad-royal-andaaz-and-clear-navigation-links-that-work-on-mobile-hamburger-menu-and-desktop",
+      "title": "Implement a multi-page marketing website for the catering business with the following pages and navigation: Home, About Us, Services, Menu, Gallery, Contact. Include a responsive header with the business name \"ROYAL BIKANA CATERERS\", tagline \"Shahi Swad • Royal Andaaz\", and clear navigation links that work on mobile (hamburger menu) and desktop.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-the-requested-premium-royal-rajputana-visual-design-consistently-across-all-pages-maroon-wine-red-base-gold-accents-subtle-traditional-indian-pattern-textures-and-royal-elements-crown-shield-motifs-the-layout-must-remain-clean-and-modern-while-retaining-a-traditional-indian-touch-and-must-be-mobile-first-and-performant",
+      "title": "Apply the requested premium Royal Rajputana visual design consistently across all pages: maroon/wine red base, gold accents, subtle traditional Indian pattern textures, and royal elements (crown/shield motifs). The layout must remain clean and modern while retaining a traditional Indian touch, and must be mobile-first and performant.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-home-page-with-a-hero-section-using-a-royal-background-b-heading-royal-wedding-event-catering-in-bikaner-c-subheading-authentic-marwari-shahi-cuisine-for-weddings-parties-events-and-d-two-cta-buttons-labeled-book-catering-and-get-menu-that-navigate-users-to-contact-and-menu-pages-respectively-add-a-highlight-section-listing-live-catering-available-pure-hygienic-food-royal-marwari-special-wedding-party-events-corporate-catering",
+      "title": "Build the Home page with: (a) hero section using a royal background, (b) heading \"Royal Wedding & Event Catering in Bikaner\", (c) subheading \"Authentic Marwari & Shahi Cuisine for Weddings, Parties & Events\", and (d) two CTA buttons labeled \"Book Catering\" and \"Get Menu\" that navigate users to Contact and Menu pages respectively. Add a highlight section listing: Live Catering Available, Pure & Hygienic Food, Royal Marwari Special, Wedding • Party • Events • Corporate Catering.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-about-us-page-and-render-the-provided-about-content-exactly-verbatim-in-professional-english-formatting-suitable-for-a-premium-wedding-catering-brand",
+      "title": "Build the About Us page and render the provided About content exactly (verbatim) in professional English formatting suitable for a premium wedding-catering brand.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-services-page-displaying-the-requested-service-list-with-icons-and-a-premium-card-grid-layout-wedding-catering-engagement-reception-catering-birthday-party-catering-anniversary-family-functions-corporate-catering-live-food-counters-royal-marwari-thali-customized-menu-planning",
+      "title": "Build the Services page displaying the requested service list with icons and a premium card/grid layout: Wedding Catering, Engagement & Reception Catering, Birthday Party Catering, Anniversary & Family Functions, Corporate Catering, Live Food Counters, Royal Marwari Thali, Customized Menu Planning.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-menu-page-with-visually-distinct-categorized-sections-and-include-all-requested-items-under-each-category-exactly-as-provided-royal-marwari-special-live-veg-main-course-rice-bread-starters-chaat-sweets-beverages",
+      "title": "Build the Menu page with visually distinct categorized sections and include all requested items under each category exactly as provided: Royal Marwari Special (Live), Veg Main Course, Rice & Bread, Starters & Chaat, Sweets, Beverages.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-gallery-page-showcasing-wedding-catering-setup-live-food-counters-royal-food-presentation-and-wedding-party-atmosphere-using-high-quality-placeholder-images-when-real-images-are-not-available-use-a-responsive-grid-with-a-lightbox-modal-view-for-larger-preview",
+      "title": "Build the Gallery page showcasing: wedding catering setup, live food counters, royal food presentation, and wedding/party atmosphere using high-quality placeholder images when real images are not available. Use a responsive grid with a lightbox/modal view for larger preview.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-contact-page-displaying-the-provided-phone-contacts-and-location-include-a-whatsapp-availability-note-add-a-book-now-on-whatsapp-button-and-implement-a-simple-contact-form-with-fields-name-mobile-number-event-type-event-date-message-form-submission-must-show-a-clear-success-failure-state",
+      "title": "Build the Contact page displaying the provided phone contacts and location, include a WhatsApp availability note, add a \"Book Now on WhatsApp\" button, and implement a simple contact form with fields: Name, Mobile Number, Event Type, Event Date, Message. Form submission must show a clear success/failure state.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-premium-footer-across-all-pages-that-includes-business-name-tagline-both-phone-numbers-location-bikaner-rajasthan-and-social-icons-for-instagram-and-whatsapp-social-icons-must-link-out-whatsapp-to-wa-me-instagram-can-be-a-placeholder-link-if-no-handle-is-provided",
+      "title": "Add a premium footer across all pages that includes: business name, tagline, both phone numbers, location \"Bikaner, Rajasthan\", and social icons for Instagram and WhatsApp. Social icons must link out (WhatsApp to wa.me; Instagram can be a placeholder link if no handle is provided).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-seo-friendly-structure-and-basic-on-page-seo-for-all-pages-meaningful-page-titles-meta-descriptions-semantic-headings-and-performance-friendly-assets-include-the-provided-keywords-naturally-in-relevant-page-copy-and-or-meta-descriptions-without-keyword-stuffing-best-caterers-in-bikaner-wedding-caterers-in-bikaner-marwari-catering-service-royal-catering-bikaner",
+      "title": "Implement SEO-friendly structure and basic on-page SEO for all pages: meaningful page titles, meta descriptions, semantic headings, and performance-friendly assets. Include the provided keywords naturally in relevant page copy and/or meta descriptions without keyword stuffing: \"Best Caterers in Bikaner\", \"Wedding Caterers in Bikaner\", \"Marwari Catering Service\", \"Royal Catering Bikaner\".",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create royal Rajputana-themed website design (maroon/wine red with golden accents, crown/shield/pattern elements), clean modern layout with traditional Indian touch; mobile-friendly and fast-loading",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Implement website pages: Home, About Us, Services, Menu, Gallery (with placeholders), Contact, plus footer with business details and social icons",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Home page hero and CTA buttons (Book Catering, Get Menu) plus highlight sections (Live Catering, Hygienic Food, Royal Marwari Special, catering types)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Services page with icon-based list of offered services (wedding/engagement/birthday/anniversary/corporate/live counters/royal thali/custom menu)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Menu page with categorized menu sections and listed items (Royal Marwari Special Live, Veg Main Course, Rice & Bread, Starters & Chaat, Sweets, Beverages)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Contact page with phone numbers, location, simple contact form fields, WhatsApp availability, and 'Book Now on WhatsApp' button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Logo requirement: royal logo concept combining crown + shield + cooking pot (handi)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "SEO-friendly structure with target keywords, optimized performance for fast loading and mobile/desktop",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Implement backend support for saving contact inquiries (leads) submitted from the Contact form, including fields: name, mobileNumber, eventType, eventDate (optional), message, createdAt timestamp. Provide a backend query method to list inquiries for later use/debugging (no public admin UI required unless added later).",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "ROYAL BIKANA CATERERS",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

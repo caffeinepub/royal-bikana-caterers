@@ -1,0 +1,18 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup for all six pages (Home, About, Services, Menu, Gallery, Contact) wrapped in a shared SiteLayout component.",
+  "frontend/src/components/SiteLayout.tsx": "Shared layout wrapper component that renders the SiteHeader, main content area, and SiteFooter across all pages.",
+  "frontend/src/components/SiteHeader.tsx": "Responsive header component with business branding, desktop navigation menu, and mobile hamburger menu using Sheet component for all six pages.",
+  "frontend/src/components/SiteFooter.tsx": "Premium footer component displaying business information, contact details, location, social media links (WhatsApp and Instagram), and Caffeine.ai attribution with UTM tracking.",
+  "frontend/src/pages/HomePage.tsx": "Home page with royal hero section featuring exact headings, CTA buttons to Contact and Menu pages, and highlight cards showcasing key service features with icons.",
+  "frontend/src/pages/AboutPage.tsx": "About Us page displaying the provided company description verbatim in a premium card layout with additional statistics cards.",
+  "frontend/src/pages/ServicesPage.tsx": "Services page showcasing all eight catering services in a responsive grid with icons and descriptions using Card components.",
+  "frontend/src/pages/MenuPage.tsx": "Menu page with categorized food items organized in tabs for easy navigation between Royal Marwari Special, Main Course, Rice & Bread, Starters, Sweets, and Beverages.",
+  "frontend/src/pages/GalleryPage.tsx": "Gallery page displaying eight placeholder images in a responsive grid with lightbox/modal preview functionality using Dialog component.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page with business contact information, WhatsApp booking button with prefilled message, and validated contact form that submits to backend with success/error states.",
+  "frontend/src/hooks/useSubmitContactInquiry.ts": "React Query mutation hook for submitting contact form data to the backend submitContactForm method with proper error handling.",
+  "frontend/src/hooks/useSeo.ts": "Custom hook for setting page-specific document titles and meta descriptions for SEO optimization across all pages.",
+  "frontend/index.css": "Global styles with OKLCH color system defining maroon/wine red and gold color palette for Royal Rajputana theme, including pattern background utility class.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom maroon, gold, and cream colors, Playfair Display serif font for headings, and Inter sans-serif for body text.",
+  "frontend/src/main.tsx": "Application entry point that sets up React Query, Internet Identity provider, and renders the App component with correct CSS import path from src directory.",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining maroon/wine red and gold color palette for Royal Rajputana theme, including pattern background utility class and custom font families."
+}
